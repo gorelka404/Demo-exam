@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<head>
+    <title>Обновление заявки</title>
+</head>
+<body>
+    <a href="create.html">Создание заявки</a>
+    <a href="orders.html">Список заявок</a>
+    <iframe name="frame" style="display: none;"></iframe>
+    <form target="frame" action="https://localhost:8000/update" method="get">
+        <input required placeholder="Номер" type="number" name="number" /><br />
+        <input placeholder="Описание проблемы" type="text" name="problemType" /><br />
+        <input placeholder="Мастер" type="text" name="master" /><br />
+        <input placeholder="Комментарий" type="text" name="comment" /><br />
+        <label for="status">Статус</label><br />
+        <select name="status">
+            <option></option>
+            <option>ожидание запчастей</option>
+            <option>в работе</option>
+            <option>завершено</option>
+        </select><br />
+        <input type="submit" value="обновление" />
+    </form>
+</body>
+
+</html>
